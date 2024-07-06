@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact-us</title>
+
+<!--import css style-->
+<link rel="stylesheet" href="movieheader.css">
+
+</head>
+
+<body class="body2">
+<!-- header start-->
+<nav  class="navbar">
+        <div class="navbar-container">
+            <div class="logo-container">
+                <h1 class="logo">CinemaLand</h1>
+            </div>
+            <div class="menu-container">
+                <ul class="menu-list">
+                    <li onclick="location.href = 'index.html'"; class="menu-list-item">Home</li>
+                    <li onclick="location.href = 'movietables.html'"; class="menu-list-item">Movies</li>
+                    <li onclick="location.href = 'top5page.html'"; class="menu-list-item">Top 5</li>
+                    <li onclick="location.href = 'contactus.html'"; class="menu-list-item active">Contact Us</li>
+
+                </ul>
+            </div>
+         
+        </div>
+    </nav >
+<!-- header end -->
+
+
+<!-- susi changed here 11/1 -->
+  <!--Contact Us Form-->
+    <form class="contactForm" action="" method="post">  
+        <h2 class="contact">Contact Us</h2>    
+        <input name="name" type="text" class="contactInput" placeholder="Name" tabindex="1" autofocus /> 
+        <input name="phone" type="text" class="contactInput" placeholder="Phone"  tabindex="2" autofocus />    
+        <input name="email" type="text" class="contactInput" placeholder="Email" tabindex="3" autofocus />
+        <textarea name="textarea" class="contactInput" placeholder="Message" tabindex="4" autofocus ></textarea>
+        <input class="ContactButton" type="submit" value="Send" onclick="return confirm('Are you sure you want to submit the form?')"/>
+		<input class="ContactButton" type="Reset" value="Clear"onclick="return confirm('Are you sure you want to clear the form?')"/>
+      </form>
+	  
+<!--Footer-->
+<footer>
+   <span id="copyRight">&copy copyright. All rights are reserved</span>
+  <span id="email">Email:</span><a href="mailto:lina.khhaled@gmail.com" id="emailIcon">&#9993;</a>
+</footer>
+     
+</body>
+
+</html>

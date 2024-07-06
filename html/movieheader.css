@@ -1,0 +1,774 @@
+
+/*scroll down for footer including email*/
+ /*font chosen for website*/
+
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+
+
+/*main website menu on all pages */
+
+    .navbar {
+        width: 100%;
+        height: 50px;
+        background-color: black;
+		/*to prevent the bar from moving when scrolling */
+        position: absolute;
+        top: 0;
+      }
+      
+      .navbar-container {
+        display: flex;
+        align-items: center;
+        padding: 0 50px;
+        height: 100%;
+        color: white;
+        font-family: Montserrat, Arial, Helvetica, sans-serif;
+		
+      }
+      
+      .logo-container {
+        flex: 1;
+      }
+      
+      .logo {
+        font-size: 30px;
+        color:#FF3747;
+      }
+      
+      .menu-container {
+        flex: 6;
+		
+      }
+      
+      .menu-list {
+        display: flex;
+        list-style: none;
+      }
+      
+      .menu-list-item {
+        margin-right: 70px;
+        font-size: 18px;
+        font-family: Montserrat, Arial, Helvetica, sans-serif;
+     cursor: pointer;
+      }
+	 
+      .menu-list-item:hover {
+        text-decoration: underline;
+      }
+      
+      .menu-list-item.active {
+        font-weight: bold;
+        background-color:#FF3747;
+		text-align: center;
+		text-decoration:none;
+		width: 150px;
+      }
+    
+	
+/*Body background for index + contact us page*/
+body.body1 { background-image: url(images/rows-red-seats-theater.jpg);
+        background-size: cover; }
+		
+/*Body background for other pages*/
+body.body2 { background-image: url(images/vector.jpg);
+        background-size: cover; }
+		
+		
+/*start of index page content*/
+.title{
+      color: white; font-size: 52px;
+      font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+        font-weight: bold; 
+       padding-top: 200px;
+       padding-left: 40px;
+       text-align: center;
+       
+    }
+	
+	.titleLog{
+      color: white; font-size: 52px;
+      font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+        font-weight: bold; 
+       padding-top: 100px;
+       padding-left: 20px;
+       text-align: center;
+       
+    }
+
+    .Mtitle{
+      color: #f4df98;
+      font-size: 75px;
+      -webkit-text-stroke: 3px #221f1f;
+    }
+	
+    #breifDesc{
+      font-size: 18px;
+      font-weight: normal;
+      font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    }
+	
+	.LoginB[type="submit"] {
+      background-color: #f4df98;
+      color: black;
+	  font-weight: bold;
+      padding: 7px 15px;
+      border: none;
+	   width: 20%;
+      cursor: pointer;
+	   position: absolute;
+      top: 450px;
+      left: 665px;
+    }	
+	
+.SignUpB[type="submit"] {
+      background-color: #f4df98;
+      color: black;
+	  font-weight: bold;
+      padding: 7px 15px;
+      border: none;
+	   width: 20%;
+      cursor: pointer;
+	   position: absolute;
+      top: 450px;
+      left: 385px;
+    }
+/*end of index page content*/
+
+/*start of Sign Up page content*/		
+		.SignContainer {
+      width: 350px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    .SignContainer label,
+    .SignContainer input[type="text"],
+    .SignContainer input[type="password"]
+    {
+      display: block;
+	  color: rgb(0, 0, 0);
+	   width: 100%;
+      margin-bottom: 3px;
+	  padding: 5px;
+    }
+
+	.SignContainer label{
+		color: white;
+	}
+	
+.SignB[type="submit"] {
+      background-color: #f4df98;
+      color: black;
+	  font-weight: bold;
+      padding: 7px 15px;
+      border: none;
+	   width: 20%;
+      cursor: pointer;
+	   position: absolute;
+      top: 500px;
+      left: 515px;
+    }	
+	/*end of Sign Up page content*/
+	
+	/*start of Log in page content*/	
+	.LogContainer {
+      width: 350px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    .LogContainer label,
+    .LogContainer input[type="text"],
+    .LogContainer input[type="password"] {
+      display: block;
+	  color: white;
+	   width: 100%;
+      margin-bottom: 3px;
+	  padding: 5px;
+    }
+	
+.LogB[type="submit"] {
+      background-color: #f4df98;
+      color: black;
+	  font-weight: bold;
+      padding: 7px 15px;
+      border: none;
+	   width: 20%;
+      cursor: pointer;
+	   position: absolute;
+      top: 360px;
+      left: 515px;
+    }	
+	/*end of Sign Up page content*/
+	
+/*start of Footer section*/
+footer {
+	background-color: black;
+	color: white;
+	font-family: times new roman;
+	font-size: 20px;
+	position: fixed; /* Use fixed position to keep it at the bottom */
+	bottom: 0; /* Stick the footer to the bottom */
+	width: 100%;
+  }
+  
+/*end of Footer section*/
+
+
+
+/*start of contact-us content*/
+/*positioning copyright part*/
+#copyRight{
+	
+  position: relative;
+  bottom: 5px;
+  left: 50px;
+  color: white;
+}
+/*positioning email icon and color part*/
+#email{
+  bottom: 5px;
+  color: white;
+  position: relative;
+  left: 700px;
+}
+
+
+/*Email Icon Style*/
+#emailIcon {
+  color: white;
+  font-size: 45px;
+  position: relative;
+  left: 750px;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+/*contact us*//*Form style*/
+.contactForm {
+	width:420px; 
+	margin:50px auto;
+	margin-bottom: 100px;
+ }
+
+/*(Contact Us) heading*/
+h2.contact{
+	background-color: rgba(255, 255, 255, 0.662);
+	padding: 7px;
+    color: black;
+    text-align: center;
+    font-family: 'Montserrat', Arial;
+    margin-bottom: 30px;
+	position:relative;
+	top: 20px;
+	margin-bottom: 50px;
+}
+
+
+/*(Contact Us Form) feilds style*/
+.contactInput {
+  color:black;
+  background-color: white;
+  font-weight:500;
+  font-family: 'Montserrat', Arial;
+  font-size: 17px;
+  border-radius: 6px;
+  border:1px solid #FF3747;
+  padding: 14px;
+  margin-bottom: 17px;
+  width:390px;
+}
+
+/*textArea*/
+textarea.contactInput {
+  height: 160px;
+}
+/*Form Submit & Clear Button Style*/
+.ContactButton {
+  text-align: center;
+  border:0;
+  border-radius:30px;
+  width: 150px;
+  margin-left: 40px;
+  font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+  font-weight:700;
+  font-size:24px;
+  background-color:#FF3747;
+  color:white;
+  padding-top:10px;
+  padding-bottom:10px;
+  /*Change the cursor when mouse focus on the button*/
+  cursor:pointer;
+ 
+}
+
+.ContactButton:hover { background:#c33838d9; }
+/*end of contact-us content*/
+
+
+/*start of table format for movietables page*/
+.moviesTable {
+	
+	margin-top: 30px;
+	margin-left: 100px; 
+	margin-right: 100px;
+	margin-bottom: 150px;
+	font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+  }
+  
+  
+   .Tmovies, td.Timages {
+    border: 6px solid #FF3747;
+    border-collapse: collapse;
+	background-color: #f5f5dc;
+	position: relative;
+	top: 50px;
+    }
+	
+	
+
+    th.Tmovies, td.Tmovies {
+      padding: 7px;
+	  font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+	  
+    }
+	th.Tmovies{
+	font-size: 25px;
+	
+	}
+	
+	td.Timages{
+	height: 150px;
+	width: 400px;
+	text-align: center;
+	
+	}
+	
+	/* Button style */
+	button.TmoviesB {
+  position: relative;
+  float: right; /* Align the button to the right */
+  bottom: 0; /* Align the button to the bottom */
+  margin-bottom: 10px; /* Add some space between the button and the bottom */
+  margin-right: 10px; /* Add some space between the button and the right */
+  height: 40px;
+  width: 150px;
+  background-color: #FF3747;
+  font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 18px;
+  color: white;
+  cursor: pointer;
+  border-radius: 10px;
+  border: none;
+}
+/* Button hover effect with linear gradient (multiple shades)*/
+button:hover {
+	background: linear-gradient(#f6192b, #f32d2d, #f85757, #fa6a6a);
+  }
+	
+	col.TmoviesCol1{
+		span: 1;
+		width: 10%;
+		
+	}
+	
+	col.TmoviesCol2{
+		span: 1;
+		width: 40%;
+	}
+/*end of table format for movietables page*/
+	
+	
+
+
+/* container + image + movieStory for movietables*/
+
+.container {
+	display: flex;
+    align-items: center;
+	margin-left: 40px;
+        }
+		
+.image {
+    width: 500px; 
+    margin-right: 330px; 
+	margin-top: 50px;
+	border-radius: 30px;
+	margin-top: 100px;
+    }
+	
+.movieStory {
+	font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    font-size: 20px; 
+	background-color: rgba(6, 5, 5, 0.418);
+	color: white;
+	position: relative;
+	right: 250px;
+	top: -170px;
+	width: 500px;
+	padding: 30px;
+	border-radius: 30px;
+	margin-top: 60px;
+    }
+
+	.trailerLink{
+		text-decoration: none;
+		color: aqua;
+	}
+	.trailerLink:hover{
+		text-decoration: none;
+		color: rgb(14, 185, 185);
+	}
+/*--------------------------------*/
+/* start of movie1 details*/	
+p.movieTitle1m {
+    font-size: 40px; 
+	background-color: rgba(255, 255, 255, 0.684);
+	position: relative;
+	right: 100px;
+	top: -170px;
+	width: 180px;
+	padding-top: 10px;
+	padding-left: 30px;
+	padding-right: 30px;
+	padding-bottom: 10px;
+	color: red;
+	
+    }
+	
+	ul.cast1m {
+	font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+            margin-top: 20px;
+			margin-left: 650px;
+            font-size: 20px;
+			background-color: rgba(6, 5, 5, 0.418);
+			position: relative;
+			left: 0px;
+			top: -375px;
+			width: 200px;
+			padding-top: 20px;
+			padding-bottom: 20px;
+			padding-right: 10px;
+			color: rgb(255, 255, 255);
+			
+        }
+		
+		ul.type1m {
+		font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+            margin-top: 20px;
+            margin-left: 580px;
+            font-size: 20px;
+			background-color: rgba(6, 5, 5, 0.418);
+			position: relative;
+			left: 350px;
+			top: -645px;
+			width: 200px;
+			padding-top: 20px;
+			padding-bottom: 20px;
+			color: white;
+        }
+		
+		ul.productionyear1m {
+		font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+            margin-top: 20px;
+            margin-left: 580px;
+            font-size: 20px;
+			background-color: rgba(6, 5, 5, 0.418);
+			position: relative;
+			left: 350px;
+			top: -640px;
+			width: 200px;
+			padding-top: 20px;
+			padding-bottom: 20px;
+			color: white;
+        }
+		
+		ul.producers1m {
+		font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+            margin-top: 20px;
+            margin-left: 650px;
+            font-size: 20px;
+			background-color: rgba(6, 5, 5, 0.418);
+			position: relative;
+			left: 0px;
+			top: -600px;
+			width: 200px;
+			padding-top: 20px;
+			padding-bottom: 20px;
+			padding-right: 10px;
+			color: white;
+        }
+		
+		ul.trailer1m {
+		font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+            margin-top: 20px;
+            margin-left: 580px;
+            font-size: 20px;
+			background-color: rgba(6, 5, 5, 0.418);
+			position: relative;
+			left: 350px;
+			top: -775px;
+			width: 200px;
+			padding-top: 20px;
+			padding-bottom: 20px;
+			color: white;
+        }
+		
+/* end of movie1 details*/
+/* start of movie2 details*/
+p.movieTitle2m {
+    font-size: 40px; 
+	background-color: rgba(255, 255, 255, 0.684);
+	position: relative;
+	right: 100px;
+	top: -135px;
+	width: 205px;
+	padding-top: 10px;
+	padding-left: 30px;
+	padding-right: 30px;
+	padding-bottom: 10px;
+	color: red;
+    }
+	
+	ul.cast2m {
+            font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+            margin-top: 20px;
+            margin-left: 650px;
+            font-size: 20px;
+			background-color: rgba(6, 5, 5, 0.418);
+			position: relative;
+			left: 0px;
+			top: -330px;
+			width: 200px;
+			padding-top: 20px;
+			padding-bottom: 20px;
+			padding-right: 10px;
+			color: white;
+        }
+		
+		ul.type2m {
+		font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+            margin-top: 20px;
+            margin-left: 580px;
+            font-size: 20px;
+			background-color: rgba(6, 5, 5, 0.418);
+			position: relative;
+			left: 350px;
+			top: -580px;
+			width: 200px;
+			padding-top: 20px;
+			padding-bottom: 20px;
+			color: white;
+        }
+		
+		ul.productionyear2m {
+		font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+            margin-top: 20px;
+            margin-left: 580px;
+            font-size: 20px;
+			background-color: rgba(6, 5, 5, 0.418);
+			position: relative;
+			left: 350px;
+			top: -565px;
+			width: 200px;
+			padding-top: 20px;
+			padding-bottom: 20px;
+			color: white;
+        }
+		
+		ul.producers2m {
+		font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+            margin-top: 20px;
+			margin-left: 650px;
+            font-size: 20px;
+		background-color: rgba(6, 5, 5, 0.418);
+			position: relative;
+			left: 0px;
+			top: -550px;
+			width: 220px;
+			padding-top: 20px;
+			padding-bottom: 20px;
+			color: white;
+        }
+		
+		ul.trailer2m {
+		font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+            margin-top: 20px;
+            margin-left: 580px;
+            font-size: 20px;
+			background-color: rgba(6, 5, 5, 0.418);
+			position: relative;
+			left: 350px;
+			top: -700px;
+			width: 200px;
+			padding-top: 20px;
+			padding-bottom: 20px;
+			color: white;
+			
+        }
+/* end of movie2 details*/		
+/* start of movie3 details*/
+p.movieTitle3m {
+    font-size: 40px; 
+	background-color: rgba(255, 255, 255, 0.684);
+	position: relative;
+	right: 100px;
+	top: -170px;
+	width: 205px;
+	padding-top: 10px;
+	padding-left: 30px;
+	padding-right: 50px;
+	padding-bottom: 10px;
+	color: red;
+    }
+	
+ul.cast3m {
+            font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+            margin-top: 20px;
+            margin-left: 650px;
+            font-size: 20px;
+			background-color: rgba(6, 5, 5, 0.418);
+			position: relative;
+			left: 0px;
+			top: -400px;
+			width: 200px;
+			padding-top: 20px;
+			padding-bottom: 20px;
+			padding-right: 10px;
+			color: white;
+			
+        }
+		
+		ul.type3m {
+		font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+            margin-top: 20px;
+            margin-left: 580px;
+            font-size: 20px;
+			background-color: rgba(6, 5, 5, 0.418);
+			position: relative;
+			left: 350px;
+			top: -800px;
+			width: 200px;
+			padding-top: 20px;
+			padding-bottom: 20px;
+			color: white;
+        }
+	
+	ul.productionyear3m {
+		font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+            margin-top: 20px;
+            margin-left: 580px;
+            font-size: 20px;
+			background-color: rgba(6, 5, 5, 0.418);
+			position: relative;
+			left: 350px;
+			top: -800px;
+			width: 200px;
+			padding-top: 20px;
+			padding-bottom: 20px;
+			color: white;
+        }
+		
+		ul.producers3m {
+		font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+            margin-top: 20px;
+            margin-left: 650px;
+            font-size: 20px;
+			background-color: rgba(6, 5, 5, 0.418);
+			position: relative;
+			left: 0px;
+			top: -650px;
+			width: 220px;
+			padding-top: 20px;
+			padding-bottom: 20px;
+			color: white;
+        }
+		
+		ul.trailer3m {
+		font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+            margin-top: 20px;
+            margin-left: 580px;
+            font-size: 20px;
+			background-color: rgba(6, 5, 5, 0.418);
+			position: relative;
+			left: 350px;
+			top: -900px;
+			width: 200px;
+			padding-top: 20px;
+			padding-bottom: 20px;
+			color: white;
+        }
+/* end of movie3 details*/
+/*start of top 5 page content*/
+	h2.top5{
+	font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+	text-align: center;
+	color: rgb(0, 0, 0);
+	font-weight: bold;
+	background-color: #ffffffa7;
+	margin-top: 80px;
+	width: 50%;
+	margin-left:300px;
+	padding: 10px;
+	}
+	
+
+  
+  table.top5 {
+  margin-top: 30px;
+  margin-left: 270px; 
+  margin-right: 500px;
+  margin-bottom: 100px;
+  border: 8px solid #FF3747;
+  border-collapse: collapse;
+  background-color: #f5f5dc9f;
+  font-size: 25px;
+  font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+  width:55%;
+  height:55%;
+}
+	
+	th.top5, td.top5 {
+    border: 8px solid #FF3747;
+    border-collapse: collapse;
+	background-color: #f5f5dc;
+	font-size: 25px;
+    }
+	
+
+	td.top5{
+	height: 50px;
+	width: 100px;
+	align: center;
+	}
+	
+	img.rank{
+	position: relative;
+	top: -80px;
+	left: 100px;
+	}
+	
+	p.datacell{
+	font-size: 20px;
+	font-weight: bold;
+	text-align: center;
+	}
+	
+	.ranknum{
+	margin-left: 60px;
+	font-weight: bold;
+	font-size: 30px;
+	text-align: center;
+	}
+	
+	img.poster{
+	position: relative;
+	top: 17px;
+	left: 80px;
+	}
+	
+	img.poster:hover{
+		transform: scale(1.5);
+	}
+/*end of top 5 page content*/

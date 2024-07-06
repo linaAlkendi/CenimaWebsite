@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Movie tables</title>
+<!--import css style-->
+<link rel="stylesheet" type="text/css" href="movieheader.css">
+<script src="script.js"></script>
+</head>
+
+<body class="body2">
+<!-- header start-->
+<nav  class="navbar">
+        <div class="navbar-container">
+            <div class="logo-container">
+                <h1 class="logo">CinemaLand</h1>
+            </div>
+            <div class="menu-container">
+                <ul class="menu-list">
+                    <li onclick="location.href = 'index.html'"; class="menu-list-item">Home</li>
+                    <li onclick="location.href = 'movietables.html'"; class="menu-list-item active">Movies</li>
+                    <li onclick="location.href = 'top5page.html'"; class="menu-list-item">Top 5</li>
+                    <li onclick="location.href = 'contactus.html'"; class="menu-list-item ">Contact Us</li>
+
+                </ul>
+            </div>
+         
+        </div>
+    </nav >
+<!-- header end -->
+
+
+  <!--table-->
+  <table class="moviesTable">
+  <colgroup>
+        <col class = "TmoviesCol1">
+        <col class = "TmoviesCol2">
+   </colgroup>
+   
+   <thead>
+    <tr>
+      <th class = "Tmovies">Movie</th>
+      <th class = "Tmovies">Overview</th>
+    </tr>
+	</thead>
+	
+	
+	<tbody>
+	
+    <tr>
+      <td class = "Timages"><img src="images/the nun.jpg" alt="Movie One" height="150" width="100"></td>
+      <td class = "Tmovies">A priest with a haunted past and a novice on the threshold of her final vows are sent by the Vatican to investigate the death of a young nun in Romania and confront a malevolent force in the form of a demonic nun.
+<br><br>
+	  <img class = "ratings" src="images/3 stars.png" alt="Movie One Rating" height="30" width="160">
+      <button class = "TmoviesB" onclick="location.href = 'Movie1details.html'"  >Read More</button>
+	  </td>
+    </tr>
+
+
+
+
+
+    <tr>
+      <td class = "Timages"><img src="images/one piece.jpg" alt="Movie Two" height="150" width="100"></td>
+      <td class = "Tmovies">An epic saga of adventure on the high seas, the story follows the adventures of Luffy, an enthusiastic young man with the singular aspiration of becoming King of the Pirates.
+<br><br>
+	  <img class = "ratings" src="images/4 and a half stars.png" alt="Movie One Rating" height="30" width="160">
+	  <button class = "TmoviesB" onclick="location.href = 'Movie2details.html'">Read More</button>
+     
+	  </td>
+    </tr>
+	
+	
+	
+	
+
+    <tr>
+      <td class = "Timages"><img src="images/elemental.jpg" alt="Movie Three" height="150" width="100"></td>
+      <td class = "Tmovies">Set in a world inhabited by anthropomorphic elements of nature, the story follows fire element Ember Lumen (Lewis) and water element Wade Ripple (Athie), who meet and fall in love after Wade is summoned by a plumbing accident at a convenience store owned by Ember's father, Bernie (Del Carmen).
+<br><br>
+      <img class = "ratings" src="images/2 stars.png" alt="Movie One Rating" height="30" width="160">
+      <button class = "TmoviesB" onclick="location.href = 'Movie3details.html'">Read More</button></td>
+
+    </tr>
+	
+	</tbody>
+	
+  </table>
+    
+     
+</body>
+
+<!--Footer-->
+<footer> <span id="copyRight">&copy copyright. All rights are reserved</span>
+  <span id="email">Email:</span><a href="mailto:lina.khhaled@gmail.com" id="emailIcon">&#9993;</a>
+</footer>
+
+</html>
